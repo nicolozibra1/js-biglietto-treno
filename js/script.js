@@ -9,10 +9,10 @@
 // {MY SCRIPT}
 
 // creo due variabili che conterranno i dati in input del utente. (Valore di ritorno di un prompt)
-let mileage = prompt("Inserisci la quantità di km che vuoi percorrere");
-let age = prompt("Inserisci la tua età");
+// let mileage = prompt("Inserisci la quantità di km che vuoi percorrere");
+// let age = prompt("Inserisci la tua età");
 
-console.log(mileage + age);
+// console.log(mileage + age);
 
 // creo una constante contenente il prezzo fisso per km
 const priceForKm = 0.21;
