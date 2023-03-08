@@ -18,32 +18,31 @@ console.log(mileage + age);
 const priceForKm = 0.21;
 
 console.log(priceForKm);
-// calcolo un costo parziale sulla base di km da percorrere e prezzo per km
-let partialPrice = mileage * priceForKm;
+// calcolo il costo totale sulla base di km da percorrere e prezzo per km
+let totalPrice = mileage * priceForKm;
 
-console.log(partialPrice);
+console.log(totalPrice);
 
 // creo due constanti contenenti i possibili sconti che verranno applicati sul prezzo del biglietto
 const discount20 = 0.20;
 const discount40 = 0.40;
 
 //creo due variabili che calcoleranno lo sconto da applicare sul prezzo finale
-let discountApplied20 = partialPrice * discount20;
-let discountApplied40 = partialPrice * discount40;
-
-console.log(discountApplied20);
+let discountApplied20 = totalPrice * discount20;
+let discountApplied40 = totalPrice * discount40;
 
 // creo più condizioni che mi permettano di verificare -se e quale- sconto applicare al utente, sulla base delle informazioni che utente mi ha fornito
 if (age < 18) {
-    partialPrice -= discountApplied20;
+    totalPrice -= discountApplied20;
+    console.log(discountApplied20);
 }
 if (age > 64) {
-
+    totalPrice -= discountApplied40;
+    console.log(discountApplied40);
 }
 else{
-
+    totalPrice = totalPrice;
 }
 
+console.log(totalPrice);
 
-
-console.log();
