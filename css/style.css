@@ -10,6 +10,9 @@
     --eerie-black: #202020ff;
     --jet: #333533ff;
 }
+/* font-family: 'Climate Crisis', cursive;
+font-family: 'Pacifico', cursive; */
+
 body{
     background-color: var(--jet);
 }
@@ -40,6 +43,17 @@ main{
     background-color: var(--jonquil);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.box-left h2{
+    font-family: 'Climate Crisis', cursive;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(-90deg);
+    font-size: 3rem;
+    letter-spacing: 2px;
 }
 
 .box-right{
