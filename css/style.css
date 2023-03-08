@@ -14,21 +14,25 @@
 font-family: 'Pacifico', cursive; */
 
 body{
-    background-color: var(--jet);
+    background-color: black;
 }
 header{
-    background-color: var(--eerie-black);
+    background-color: var(--jet);
     height: 100px;
 }
 header h2{
+    font-family: 'Climate Crisis', cursive;
     color: var(--jonquil);
     text-transform: uppercase;
     font-size: 3rem;
     padding: 20px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 main{
     height: calc(100vh - 100px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -46,11 +50,13 @@ main{
     display:flex;
     justify-content:center;
     align-items: center;
+    border: 2px solid white;
+    border-right: 3px dotted black;
 }
 .box-left h2{
     font-family: 'Climate Crisis', cursive;
     text-transform: uppercase;
-    color: white;
+    color: black;
     transform: rotate(-90deg);
     font-size: 3rem;
     letter-spacing: 2px;
@@ -62,20 +68,60 @@ main{
     background-color: black;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: url(../img/bg-2.jpg);
+    background-size: cover;
+    position: relative;
+    border: 2px solid white;
+    border-left:none;
+}
+.box-right h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-style: bold;
+    padding-top: 20px;
+
+}
+#price h2{
+    color: white;
+    font-size: 8rem;
+    padding-top:50px;
 }
 .circle{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: var(--jet);
+    background-color: black;
+   
 }
 .c-top{
     position: absolute;
     top:-20px;
     left:130px;
+    border-bottom: 2px solid white;
 }
 .c-bot{
     position: absolute;
     bottom:-20px;
     left:130px;
+    border-top: 2px solid white;
+}
+.qr-box{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.qr-box img{
+    width: 100%;
+    filter: invert();
+}
+footer h5{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 100px;
 }

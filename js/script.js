@@ -9,8 +9,8 @@
 // {MY SCRIPT}
 
 // creo due variabili che conterranno i dati in input del utente. (Valore di ritorno di un prompt)
-// let mileage = prompt("Inserisci la quantità di km che vuoi percorrere");
-// let age = prompt("Inserisci la tua età");
+let mileage = prompt("Inserisci la quantità di km che vuoi percorrere");
+let age = prompt("Inserisci la tua età");
 
 // console.log(mileage + age);
 
@@ -35,13 +35,22 @@ let discountApplied40 = totalPrice * discount40.toFixed(2);
 if (age < 18) {
     totalPrice -= discountApplied20;
     console.log(discountApplied20);
+    document.getElementById('price').innerHTML = `
+    <h2>${totalPrice}&euro;</h2>
+    `
 }
 if (age > 64) {
     totalPrice -= discountApplied40;
     console.log(discountApplied40);
+    document.getElementById('price').innerHTML = `
+    <h2>${totalPrice}&euro;</h2>
+    `
 }
 else{
     totalPrice = totalPrice;
+    document.getElementById('price').innerHTML = `
+    <h2>${totalPrice}&euro;</h2>
+    `
 }
 
 console.log(totalPrice);
