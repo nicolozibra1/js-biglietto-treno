@@ -19,7 +19,7 @@ const priceForKm = 0.21;
 
 console.log(priceForKm);
 // calcolo il costo totale sulla base di km da percorrere e prezzo per km
-let totalPrice = mileage * priceForKm;
+let totalPrice = (mileage * priceForKm).toFixed(2);
 
 console.log(totalPrice);
 
@@ -28,8 +28,8 @@ const discount20 = 0.20;
 const discount40 = 0.40;
 
 //creo due variabili che calcoleranno lo sconto da applicare sul prezzo finale
-let discountApplied20 = totalPrice * discount20;
-let discountApplied40 = totalPrice * discount40;
+let discountApplied20 = (totalPrice * discount20).toFixed(2);
+let discountApplied40 = totalPrice * discount40.toFixed(2);
 
 // creo più condizioni che mi permettano di verificare -se e quale- sconto applicare al utente, sulla base delle informazioni che utente mi ha fornito
 if (age < 18) {
